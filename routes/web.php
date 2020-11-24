@@ -36,6 +36,7 @@ Route::prefix('admin')->middleware('admin_auth')->group(function() {
 
     Route::resource('fuel', 'Admin\FuelController')->names('admin.fuel');
     Route::resource('column', 'Admin\ColumnController')->except('show')->names('admin.column');
+    Route::resource('order', 'Admin\OrderController')->except('show')->names('admin.order');
 
     Route::resource('/', 'Admin\DashboardController')
         ->only(['index'])->names('admin.dashboard');

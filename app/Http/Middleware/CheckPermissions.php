@@ -6,6 +6,7 @@ use Alexusmai\LaravelFileManager\Controllers\FileManagerController;
 use App\Http\Controllers\Admin\ColumnController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\FuelController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\PermissionController;
 use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\UserController;
@@ -62,6 +63,7 @@ class CheckPermissions
         // Админ
         FuelController::class => 'fuel',
         ColumnController::class => 'column',
+        OrderController::class => 'order',
 
         DashboardController::class => 'dashboard',
         UserController::class => 'user',

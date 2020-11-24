@@ -42,6 +42,11 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::create(['name' => 'cashbox_add', 'description' => 'Добавлять кассу']);
         Permission::create(['name' => 'cashbox_delete', 'description' => 'Удалять кассу']);
 
+        Permission::create(['name' => 'order_view', 'description' => 'Просматривать чек']);
+        Permission::create(['name' => 'order_edit', 'description' => 'Редактировать чек']);
+        Permission::create(['name' => 'order_add', 'description' => 'Добавлять чек']);
+        Permission::create(['name' => 'order_delete', 'description' => 'Удалять чек']);
+
         Permission::create(['name' => 'user-role_view', 'description' => 'Просматривать роли пользователей']);
         Permission::create(['name' => 'user-role_edit', 'description' => 'Синхронизировать пользователей и роли']);
 

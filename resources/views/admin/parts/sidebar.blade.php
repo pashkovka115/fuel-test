@@ -47,6 +47,13 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="{{ route('admin.order.index') }}" class="nav-link">
+                        <i class="fas fa-border-none"></i>
+                        <p>Чеки</p>
+                    </a>
+                </li>
+
 
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
